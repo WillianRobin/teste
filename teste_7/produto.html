@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOX ICON : para icones -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- ambos -->
     <link rel="stylesheet" href="ambos.css">
     <!-- para cada modelo -->
     <link rel="stylesheet" href="computador.css">
-    <link rel="stylesheet" href="celular.css" media="screen and(max-width: 450px)">
+    <link rel="stylesheet" href="celular.css" media="screen and (max-width: 450px)">
     <title>Document</title>
 </head>
 
@@ -29,24 +31,24 @@
                 alt="" class="outra-imagem">
 
         </div>
-        <div id="imagezoom" style="
-        --url: url(https://images.tcdn.com.br/img/img_prod/742199/blusa_cropped_rosa_753_2_81febb40d1caf27540bb6b06d4186c69.jpg);
-        --zoom-x: 0%;
-        --zoom-y: 0%;
-        --display: none">
+        <!-- imagem pricipal do produto -->
+        <div class="zoom-imagem">
             <img src="https://images.tcdn.com.br/img/img_prod/742199/blusa_cropped_rosa_753_2_81febb40d1caf27540bb6b06d4186c69.jpg"
-                alt="...">
+                alt="..." class="imagem-principal">
+            <span>Passe o cursor sobre o elemento para ampliar o seu tamanho.</span>
         </div>
-        <div class="sobre-produto">
-            <h2>a</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, vero.</p>
 
+        <div class="sobre-produto">
+            <h2>CAMISA ROSA OVERSIZED</h2>
+            <p class="sobre">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, vero.</p>
+            <p class="valor">R$35,00</p>
             <div class="compra">
-                <button>comprar</button><button>adicionar +</button>
+                <button class="comprar">comprar</button> <button class="carrinho">adicionar +</button>
             </div>
         </div>
     </div>
     <script src="produto.js"></script>
+    <script src="produto-celular.js"></script>
 </body>
 
 </html>

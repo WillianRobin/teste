@@ -1,8 +1,77 @@
-html, body{
-    width: 450px;
+html,
+body {
+    max-width: 450px;
     height: 100%;
 }
 
-.container{
-    width: 500px;
+.container {
+    max-width: 400px;
+    height: 800px;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.imagem-principal {
+    order: -4;
+    justify-self: baseline;
+    justify-self: center;
+}
+
+.imagens-selecionave {
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    margin: 0;
+    margin-left: 10px;
+}
+
+.outra-imagem {
+    width: 95px;
+    height: 120px;
+}
+
+.zoom-imagem {
+    width: 400px;
+    height: 400px;
+    order: -1;
+    margin-left: 50px;
+}
+
+.zoom-imagem span {
+    margin-left: 0px;
+    top: 10%;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.sobre {
+    margin-bottom: 20px;
+}
+
+.valor {
+    margin-bottom: 20px;
+}
+
+.compra {
+    justify-self: end;
+}
+
+.sobre-produto {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sobre-produto p {
+    font-size: 15px;
+    text-align: justify;
+    justify-self: baseline;
+}
+
+.compra {
+    display: flex;
+    justify-content: space-between;
 }
