@@ -5,14 +5,21 @@ body {
 }
 
 .container {
-    max-width: 400px;
-    height: 800px;
-    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    max-width: 375px;
+    height: 1300px;
+    flex-direction: column;
+    display: flex;
     padding: 0;
+
 }
 
+h2{
+    margin-top: 10px;
+}
 .imagem-principal {
-    order: -4;
+    order: -1;
     justify-self: baseline;
     justify-self: center;
 }
@@ -20,26 +27,33 @@ body {
 .imagens-selecionave {
     display: flex;
     flex-direction: row;
-    height: 150px;
+    align-items: center;
+    height: 100px;
+    width: 350px;
     margin: 0;
-    margin-left: 10px;
+    margin-top: 10px;
 }
+
 
 .outra-imagem {
-    width: 95px;
-    height: 120px;
+    width: 65px;
+    height: 100px;
+    margin: 0;
 }
 
+
+
 .zoom-imagem {
-    width: 400px;
+    width: 350px;
     height: 400px;
     order: -1;
-    margin-left: 50px;
 }
 
 .zoom-imagem span {
-    margin-left: 0px;
-    top: 10%;
+    top: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h2 {
@@ -48,10 +62,13 @@ h2 {
 
 .sobre {
     margin-bottom: 20px;
+    color: darkgray;
 }
 
 .valor {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    letter-spacing: 5px;
 }
 
 .compra {
@@ -59,13 +76,13 @@ h2 {
 }
 
 .sobre-produto {
-    width: 300px;
+    width: 350px;
     height: 200px;
     display: flex;
     flex-direction: column;
 }
 
-.sobre-produto p {
+.sobre {
     font-size: 15px;
     text-align: justify;
     justify-self: baseline;
@@ -74,4 +91,25 @@ h2 {
 .compra {
     display: flex;
     justify-content: space-between;
+}
+
+
+
+.comprar{
+    width: 350px;
+    height: 50px;
+    margin-bottom: 10px;
+    color: white;
+}
+.carrinho{
+    width: 350px;
+    height: 50px;
+    background-color: transparent;
+}
+
+
+
+footer{
+    position: relative;
+    top: 100%;
 }

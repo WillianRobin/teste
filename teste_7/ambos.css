@@ -4,9 +4,3 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-body , html{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
