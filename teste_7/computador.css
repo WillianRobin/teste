@@ -4,16 +4,6 @@ body {
     height: 100%;
 }
 
-.container {
-    position: relative;
-    top: 5%;
-    width: 1200px;
-    height: 900px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-}
 
 .outra-imagem {
     max-height: 150px;
@@ -30,12 +20,10 @@ body {
     margin-right: 10px;
 }
 
-
-
 /* ZOOM da imagem */
 
 .zoom-imagem {
-    max-width: 500px;
+    width: 500px;
     height: 700px;
     padding: 0;
     margin: 0;
@@ -70,17 +58,6 @@ body {
 
 /*  */
 
-.sobre-produto {
-    position: relative;
-    top: 10.5%;
-    width: 150px;
-    height: 500px;
-    margin-left: 10px;
-    display: flex;
-    flex-direction: column;
-    align-self: start;
-
-}
 
 .sobre-produto .sobre {
     margin-top: 20px;
@@ -88,22 +65,14 @@ body {
     justify-self: baseline;
 }
 
-.valor{
+.valor {
     font-size: 1.3rem;
-    text-align: center;
+
     position: relative;
     top: 20px;
 }
-.compra {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 40px;
-}
 
-
-button{
+/* button {
     width: 75px;
     background-color: black;
     border: 0px solid;
@@ -111,27 +80,117 @@ button{
     margin: 0;
     font-size: 1.5rem;
     cursor: pointer;
+} */
+
+.compra {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 40px;
 }
 
-.comprar{
+.aumentar-produtos {
+    width: 90px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#menos, #mais{
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.comprar {
+    background-color: black;
     width: 150px;
     height: 50px;
-    margin-bottom: 10px;
     color: white;
 }
-.carrinho{
+
+.carrinho {
     width: 150px;
     height: 50px;
     background-color: transparent;
     border: 1px solid;
 }
 
-.rosa{
-    color: pink;
-}
-
-.sobre{
+.sobre {
     font-weight: bold;
     text-align: left;
     color: darkgray;
+}
+
+.container1 {
+    position: relative;
+    top: 5%;
+    width: 100%;
+    height: 900px;
+    display: flex;
+    align-items: center;
+}
+
+#caixa-1 {
+    display: flex;
+    justify-content: end;
+    width: 50%;
+}
+
+.nome-produto {
+    font-size: 1.5rem;
+}
+
+
+#caixa-2 {
+    width: 30%;
+    height: 700px;
+}
+
+.sobre-produto {
+    position: relative;
+    height: 75%;
+    width: 150px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.nome-produto {
+    border-bottom: 2px #ddd solid;
+}
+
+.container2 {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+
+}
+
+/* descrição do produto */
+
+.descricao-produto {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.descricao-produto p {
+    text-align: justify;
+}
+
+.descricao {
+    font-size: 1.5rem;
+    width: 100%;
+    border-bottom: 2px #ddd solid;
 }

@@ -13,8 +13,6 @@
 
     <link rel="stylesheet" href="style.css">
 
-
-
     <!-- BOX ICON : para icones -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
@@ -32,7 +30,7 @@
 
     <header class="d-flex justify-content-center">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <div class="container1 justify-content-center">
+            <div class="container justify-content-center">
                 <a class="navbar-brand" href="#"><img src="./IMG/logo.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,51 +57,62 @@
             </div>
         </nav>
     </header>
-    <div class="container">
+    <div class="container1">
 
 
 <!-- PRODUTO -->
-        <div class="imagens-selecionave">
-
-            <img src="https://images.tcdn.com.br/img/img_prod/742199/blusa_cropped_rosa_753_2_81febb40d1caf27540bb6b06d4186c69.jpg"
-                alt="" class="outra-imagem">
-
-            <img src="https://images.tcdn.com.br/img/img_prod/742199/blusa_cropped_rosa_753_3_efde9b0e90e449cc9324b064de1e9070.jpg"
-                alt="" class="outra-imagem">
-
-            <img src="https://images.tcdn.com.br/img/img_prod/742199/blusa_cropped_rosa_753_3_efde9b0e90e449cc9324b064de1e9070.jpg"
-                alt="" class="outra-imagem">
-
-            <img src="https://images.tcdn.com.br/img/img_prod/742199/blusa_cropped_rosa_753_1_ca8b22bed6c6d9f738d615a3c308d597.jpg"
-                alt="" class="outra-imagem">
-
+        <div id="caixa-1">
+            <div class="imagens-selecionave">
+            
+                <img src="./img/camisa-branca.jpeg"
+                    alt="" class="outra-imagem">
+            
+                <img src="./img/camisa-branca2.jpeg"
+                    alt="" class="outra-imagem">
+            
+                <img src="./img/camisa-branca3.jpeg"
+                    alt="" class="outra-imagem">
+            
+                <img src="https://images.tcdn.com.br/img/img_prod/742199/blusa_cropped_rosa_753_1_ca8b22bed6c6d9f738d615a3c308d597.jpg"
+                    alt="" class="outra-imagem">
+            
+            </div>
+            <!-- imagem pricipal do produto -->
+            <div class="zoom-imagem">
+                <img src="./img/camisa-branca.jpeg"
+                    alt="..." class="imagem-principal">
+                    <span><i class='bx bx-zoom-in'></i></span>
+                </img>
+            </div>
         </div>
-<!-- imagem pricipal do produto -->
-        <div class="zoom-imagem">
-            <img src="https://images.tcdn.com.br/img/img_prod/742199/blusa_cropped_rosa_753_2_81febb40d1caf27540bb6b06d4186c69.jpg"
-                alt="..." class="imagem-principal">
-            <span><i class='bx bx-zoom-in'></i></span>
-        </div>
-<!-- descrição -->
-        <div class="sobre-produto">
-            <h2>NAME</h2>
+<!-- Sobre 0 Produto -->
+        <div class="sobre-produto" id="caixa-2">
+            <p class="nome-produto">Camiseta oversized</p>
 
-            <p class="sobre">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, vero.</p>
+            <p class="sobre">Camiseta branca oversized lisa</p>
 
-<!-- a compra -->
+                <!-- a compra -->
             <p class="valor">R$35,00</p>
 
             <div class="compra">
+                <div class="aumentar-produtos">
+                    <i class='bx bx-minus' id="menos"></i> 
+                    <span class="numero-produto">1</span> 
+                    <i class='bx bx-plus' id="mais"></i></div>
                 <a href="#">
                     <button class="comprar">comprar</button>
                 </a>
                 <button class="carrinho">adicionar <i class='bx bx-cart-add'></i></button>
             </div>
+            <div class="descricao-produto">
+                <p class="descricao">Descrição</p>
+                <p>Camiseta branca oversized sem estampa, unissex. Perfeita para um estilo casual e despojado, confeccionada em algodão 100% , proporciona conforto e durabilidade. </p>
+            </div>
         </div>
     </div>
 
-
-
+    <div class="container2">
+    </div>
 <!-- footer Alice -->
     <footer>
         <div class="footer-container">

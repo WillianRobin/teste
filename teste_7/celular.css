@@ -1,13 +1,13 @@
 html,
 body {
-    max-width: 450px;
+    width: 100%;
     height: 100%;
 }
 
-.container {
+.container1 {
     position: relative;
     top: 0;
-    max-width: 375px;
+    width: 100%;
     height: 1300px;
     flex-direction: column;
     display: flex;
@@ -15,13 +15,16 @@ body {
 
 }
 
-h2{
+h2 {
+    width: 100%;
     margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
 }
+
 .imagem-principal {
     order: -1;
     justify-self: baseline;
-    justify-self: center;
 }
 
 .imagens-selecionave {
@@ -33,7 +36,6 @@ h2{
     margin: 0;
     margin-top: 10px;
 }
-
 
 .outra-imagem {
     width: 65px;
@@ -50,15 +52,12 @@ h2{
 }
 
 .zoom-imagem span {
-    top: 15%;
+    top: 24%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-h2 {
-    margin-bottom: 10px;
-}
 
 .sobre {
     margin-bottom: 20px;
@@ -71,45 +70,55 @@ h2 {
     letter-spacing: 5px;
 }
 
-.compra {
-    justify-self: end;
-}
-
 .sobre-produto {
-    width: 350px;
+    width: 200px;
     height: 200px;
     display: flex;
     flex-direction: column;
+    margin: 0;
 }
 
 .sobre {
+    width: 90%;
     font-size: 15px;
     text-align: justify;
-    justify-self: baseline;
+    align-self: center;
 }
 
 .compra {
+    width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
-
-
-.comprar{
-    width: 350px;
+.comprar {
+    width: 300px;
     height: 50px;
     margin-bottom: 10px;
     color: white;
 }
-.carrinho{
-    width: 350px;
+
+.carrinho {
+    width: 300px;
     height: 50px;
     background-color: transparent;
 }
 
+/* caixas , container, conjustos ,etc */
 
+#caixa-1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-footer{
-    position: relative;
-    top: 100%;
+#caixa-2 {
+    width: 100%;
+}
+
+.descricao-produto {
+    width: 80%;
+    background-color: darkgray;
 }
