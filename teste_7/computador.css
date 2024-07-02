@@ -12,13 +12,20 @@ body {
     cursor: pointer;
 }
 
-.imagens-selecionave {
+.imagens-selecionavel {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 700px;
     margin-right: 10px;
 }
+
+.imagens-selecionavel li:active{
+    border: 1px black solid;
+    border-radius: 5px;
+    padding: 1px;
+}
+
 
 /* ZOOM da imagem */
 
@@ -44,6 +51,10 @@ body {
     top: 12%;
     margin-left: 10px;
     border-radius: 10px;
+}
+
+.zoom-imagem span:hover{
+    display: none;
 }
 
 .imagem-principal {
@@ -72,15 +83,6 @@ body {
     top: 20px;
 }
 
-/* button {
-    width: 75px;
-    background-color: black;
-    border: 0px solid;
-    border-radius: 5px;
-    margin: 0;
-    font-size: 1.5rem;
-    cursor: pointer;
-} */
 
 .compra {
     display: flex;
@@ -108,7 +110,7 @@ body {
 }
 
 .comprar {
-    background-color: black;
+    background-color: #212529;
     width: 150px;
     height: 50px;
     color: white;
